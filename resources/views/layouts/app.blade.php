@@ -19,7 +19,7 @@
 
     <link href="/css/app.css" rel="stylesheet">
     <link href="/css/jquery.dataTables.css" rel="stylesheet">
-    <link href="/css/dataTables.boostrap.css" rel="stylesheet">
+    <link href="/css/dataTables.bootstrap.css" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -48,6 +48,10 @@
                         <li><a href="{{ url('/home')}}">Dashboard</a></li>
                         <li><a href="{{ route('authors.index')}}">Penulis</a></li>
                         @endif
+
+                        @role('admin')
+                        <li><a href="{{ route('authors.index') }}">Penulis</a></li>
+                        @endrole
                         
                     </ul>
 

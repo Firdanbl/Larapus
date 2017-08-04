@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Role;
+use App\Author;
 use App\Book;
 
 class BooksSeeder extends Seeder
